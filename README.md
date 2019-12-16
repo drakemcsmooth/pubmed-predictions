@@ -41,10 +41,10 @@ sequences to indicate genotype (e.g., "+/+") or complex chemical processes.
 It is in the remaining text of the abstract that the highest variance is found
 in two categories:
 
-#### 1. natural language text, which is frequently qualitative, and describes
+1. natural language text, which is frequently qualitative, and describes
 motivations, ranges of difficulty, or the intended effects of the work.
 
-#### 2. measurements and results, frequently quantitative, which describe
+2. measurements and results, frequently quantitative, which describe
 structured phenomena (e.g., the results of experiments) who signals are
 orthogonal to the task at hand, that is, categorizing abstracts by a common
 disease, as opposed to categorizing by how successful or how large a sample
@@ -116,7 +116,7 @@ which indicates a precision of 98.8%.
 Please see the file `gold_standard_results.txt`, in this directory
 
 
-### 8. 
+### 8. Performance
 This method performed well on the test set (the article it miscategorized has
 affinity for several possible clusters) and on several curated development sets.
 
