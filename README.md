@@ -40,14 +40,15 @@ proper nouns as identifiers of diseases (e.g., Turner's syndrome) and symbolic
 sequences to indicate genotype (e.g., "+/+") or complex chemical processes.
 It is in the remaining text of the abstract that the highest variance is found
 in two categories:
-    1. natural language text, which is frequently qualitative, and describes
-    motivations, ranges of difficulty, or the intended effects of the work.
 
-    2. measurements and results, frequently quantitative, which describe
-    structured phenomena (e.g., the results of experiments) who signals are
-    orthogonal to the task at hand, that is, categorizing abstracts by a
-    common disease, as opposed to categorizing by how successful or how large
-    a sample was used or how a significant a result.
+#### 1. natural language text, which is frequently qualitative, and describes
+motivations, ranges of difficulty, or the intended effects of the work.
+
+#### 2. measurements and results, frequently quantitative, which describe
+structured phenomena (e.g., the results of experiments) who signals are
+orthogonal to the task at hand, that is, categorizing abstracts by a common
+disease, as opposed to categorizing by how successful or how large a sample
+was used or how a significant a result.
 
 
 ### 2. Similarity Metric
