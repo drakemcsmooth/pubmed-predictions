@@ -113,7 +113,7 @@ which indicates a precision of 98.8%.
 
 
 ### 7. Output
-Please see the file `gold_standard_results.txt`, in this directory
+Please see the file [gold_standard_results.txt](gold_standard_results.txt), in this directory
 
 
 ### 8. Performance
