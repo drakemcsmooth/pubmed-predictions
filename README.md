@@ -49,12 +49,14 @@ in two categories:
     common disease, as opposed to categorizing by how successful or how large
     a sample was used or how a significant a result.
 
+
 ### 2. Similarity Metric
 For each abstract, a unigram language model is created, which is constructed
 to contain only domain terms and their frequency, along with lemmatized
 versions. The similarity metric is simply a dot-product of the language models
 of any two abstracts and expresses a notion of mutual concern over topics.
 Sometimes called "document-distance".
+
 
 ### 3. Clustering Algorithm
 Each abstract is associated with the abstract that, according to the notion of
@@ -71,6 +73,7 @@ additional round of clustering is called for, by comparing existing clusters
 to determine whether there is sufficient similarity for a union to occur,
 without sacrifice to model fitness.
 
+
 ### 4. Necessary Parameters
 The clustering is non-parametric in that no count is necessary, nor is any
 threshold value required. Observation shows that clustering tends to involve
@@ -78,6 +81,7 @@ a "hub" abstract, which mostly strongly characterizes a particular disease;
 this abstract is the best match for numerous abstracts, which are its children
 in the assignment tree and are the first abstracts assigned to the "hub"
 abstract's cluster.
+
 
 ### 5. Design Choices and Complexity
 This clustering occurs in O(n²) time and O(n) space, as each pair of abstracts
@@ -95,12 +99,21 @@ of the extra morphological insights from lemmatization (as opposed to stemming)
 would need further evaluation. For example, stemming transforms "livebirths"
 to "livebirth" but lemmatization does not.
 
+#### data processing
+To facilitate analysis, simple caching is used: abstracts that are requested from
+PubMed are saved as HDF5 files in a specified cache directory and are loaded from
+disk on subsequent runs. If the cache directory is deleted, it is simply rebuilt
+on later runs.
+
+
 ### 6. Gold Set Performance
 In the test set of 86 examples, only a single instance was clustered incorrectly
 which indicates a precision of 98.8%.
 
+
 ### 7. Output
 Please see the file `gold_standard_results.txt`, in this directory
+
 
 ### 8. 
 This method performed well on the test set (the article it miscategorized has
